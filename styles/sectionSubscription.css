@@ -1,0 +1,135 @@
+.subscription {
+  text-align: center;
+  background-color: #09090B;
+  justify-content: center;
+
+  & span {
+    margin-top: 3rem;
+  }
+}
+
+.subscription h2:nth-child(1) {
+  margin-bottom: 3rem;
+  margin-top: .5rem;
+}
+
+.cards {
+  margin-top: 2rem;
+  display: grid;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--stroke-color);
+  border-radius: 1.5rem;
+  text-align: left;
+  border: .5px solid var(--text-color-secondary);
+  max-width: 20.5rem;
+}
+
+.premium {
+  & .card {
+    padding-top: 4.5rem;
+    border: 1.5px solid orange;
+  }
+}
+
+.legend {
+  margin-top: 1rem;
+  font-size: .875rem;
+}
+
+strong {
+  font: var(--font-paragraph);
+  color: var(--text-color-secondary);
+}
+
+.card h2 {
+  font-size: 2rem;
+  align-items: flex-end;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card h3 {
+  font-weight: var(--fw-bold);
+  margin-bottom: .5rem;
+}
+
+.card .button[aria-label] {
+  width: 100%;
+
+  &::before {
+    background-color: var(--stroke-color);
+  }
+}
+
+.card .button {
+  width: 100%;
+  font-weight: var(--fw-md);
+}
+
+
+.mouthFree {
+  font: 600 0.75rem/1.6 var(--font-family);
+  color: #09090b;
+  text-transform: uppercase;
+
+  background: var(--brand-gradient);
+  width: fit-content;
+  padding-inline: 2rem;
+  padding-block: .75rem;
+  border-top-left-radius: 1.4rem;
+  border-bottom-right-radius: 1.5rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.lineCard {
+  height: 2px;
+  margin-block: 2rem;
+  background: radial-gradient(var(--text-color-secondary), var(--surface-color) 70%);
+}
+
+@media (width >=80rem) {
+  .subscription {
+    max-width: 100%;
+    justify-content: center;
+
+    & h2 {
+      max-width: 50rem;
+      margin-inline: auto;
+    }
+  }
+
+  .cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    max-width: 80rem;
+  }
+
+  .card {
+    height: 35rem;
+    margin-top: 3rem;
+    max-width: 100%;
+    padding-top: 3rem;
+  }
+
+  .premium .card {
+    padding-top: 4.5rem;
+    height: 38rem;
+    margin-top: 1.5rem;
+  }
+
+  .card h2 {
+    margin-top: 1.5rem;
+  }
+
+  .card p {
+    max-width: 20rem;
+  }
+}

@@ -1,0 +1,109 @@
+/*padding class*/
+.px-base {
+  padding-inline: var(--px-base);
+}
+
+.px-lg {
+  padding-inline: var(--px-lg);
+}
+
+.py-base {
+  padding-block: var(--py-base);
+}
+
+.py-lg {
+  padding-block: var(--py-lg);
+}
+
+.py-xl {
+  padding-block: var(--py-xl);
+}
+
+.py-2xl {
+  padding-block: var(--py-2xl);
+}
+
+/*layout class*/
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.gap-8 {
+  gap: .5rem;
+}
+
+.gap-16 {
+  gap: 1rem;
+}
+
+.gap-24 {
+  gap: 1.5rem;
+}
+
+.gap-32 {
+  gap: 2rem;
+}
+
+.mg-block-16 {
+  margin-block: 1rem;
+}
+
+.mg-block-32 {
+  margin-block: 2rem;
+}
+
+.center {
+  justify-content: center;
+  align-content: center;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+}
+
+/*text class*/
+h1 {
+  font: var(--font-h1);
+  letter-spacing: -.1px;
+}
+
+h2 {
+  font: var(--font-h2);
+}
+
+h3 {
+  font: var(--font-h3);
+}
+
+p {
+  font: var(--font-paragraph);
+}
+
+span {
+  font: var(--font-span);
+}
+
+.text-color-primary {
+  color: var(--text-color-primary);
+}
+
+.text-color-secondary {
+  color: var(--text-color-secondary);
+}
+
+.bold {
+  font-weight: var(--fw-bold);
+}
+
+.extraBold {
+  font-weight: var(--fw-extrabold);
+}

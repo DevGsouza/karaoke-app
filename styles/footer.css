@@ -1,0 +1,103 @@
+footer {
+  background-color: #09090B;
+  display: grid;
+  justify-content: center;
+
+  & img {
+    margin-bottom: 3rem;
+  }
+}
+
+.footer {
+  width: 23rem;
+}
+
+.list span {
+  font-size: .75rem;
+}
+
+.list ul {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.list ul li+li {
+  margin-top: 1rem;
+}
+
+footer p {
+  font: var(--font-span);
+  margin-bottom: 2rem;
+}
+
+.social-media {
+  margin-bottom: 2rem;
+}
+
+.tiktok,
+.instagram,
+.twitter,
+.discord {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.tiktok {
+  background: url(../assets/icons/tiktok.svg);
+}
+
+.tiktok:hover {
+  background: url(../assets/icons/tiktokHover.svg);
+}
+
+.instagram {
+  background: url(../assets/icons/instagram.svg);
+}
+
+.instagram:hover {
+  background: url(../assets/icons/instagramHover.svg);
+}
+
+.twitter {
+  background: url(../assets/icons/twitter.svg);
+}
+
+.twitter:hover {
+  background: url(../assets/icons/twitterHover.svg);
+}
+
+.discord {
+  background: url(../assets/icons/discord.svg);
+}
+
+.discord:hover {
+  background: url(../assets/icons/discordHover.svg);
+}
+
+@media (width >=80rem) {
+  .footer {
+    width: 80rem;
+  }
+
+  .legendfooter {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footerList {
+    display: flex;
+    gap: 20.75rem;
+    align-items: flex-start;
+  }
+
+  .lists {
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 7rem;
+  }
+
+  .list {
+    width: 14rem;
+    height: 9rem;
+  }
+}

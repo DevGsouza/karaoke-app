@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+
+  /* Colors */
+  --brand-gradient: linear-gradient(to right, #FC4A1A 0%, #F7B733 100%);
+  --brand-color-primary: #f7b733;
+  --brand-color-secondary: #fc4a1a;
+
+  --bg-color: #09090b;
+  --surface-color: #18181b;
+  --stroke-color: #27272a;
+
+  --text-color-primary: #f4f4f5;
+  --text-color-secondary: #a1a1aa;
+
+  /* font weights */
+  --fw-base: 400;
+  --fw-md: 500;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+
+  /* Font mobile */
+  --font-family: 'Inter', sans-serif;
+
+  --font-h1: var(--fw-extrabold) 2.5rem/1.2 var(--font-family);
+  --font-h2: var(--fw-extrabold) 1.5rem/1.2 var(--font-family);
+  --font-h3: var(--fw-extrabold) 1.25rem/1.2 var(--font-family);
+
+  --font-span: var(--fw-md) .875rem/1 var(--font-family);
+  --font-paragraph: var(--fw-base) 1rem/1.6 var(--font-family);
+
+
+  /* Variável padding */
+  --px-base: 1.5rem;
+  --px-lg: 3rem;
+
+  --py-base: 1.5rem;
+  --py-lg: 2rem;
+  --py-xl: 3rem;
+  --py-2xl: 4rem;
+}
+
+html {
+  font: var(--font-paragraph);
+  color: var(--text-color-secondary);
+}
+
+body {
+  background-color: var(--surface-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-color-primary);
+}
+
+.container {
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.mobile-only {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+
+@media (width >=80rem) {
+  :root {
+    --font-h1: var(--fw-extrabold) 4rem/1.2 var(--font-family);
+    --font-h2: var(--fw-extrabold) 3rem/1.2 var(--font-family);
+    --font-h3: var(--fw-extrabold) 2rem/1.2 var(--font-family);
+
+    /* Variável padding */
+    --px-base: 2rem;
+
+    --py-lg: 5rem;
+  }
+
+  .desktop-only {
+    display: inline;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+}

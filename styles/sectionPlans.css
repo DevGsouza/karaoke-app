@@ -1,0 +1,56 @@
+.plans {
+  display: grid;
+  justify-items: center;
+}
+
+.bg-hero {
+  background-color: #000;
+  padding-bottom: 5rem;
+  width: 100%;
+  margin-inline: auto;
+}
+
+
+h1 {
+  margin-top: 1rem;
+}
+
+h3 {
+  font-weight: var(--fw-md);
+  margin-top: .5rem;
+}
+
+.buttons {
+  margin-top: 2rem;
+}
+
+
+@media (width >=80rem) {
+
+  .bg-hero {
+    background: url(../assets/image/bg-plans-desktop.svg) no-repeat bottom center/cover;
+    background-position: center 12rem;
+    padding-bottom: 9rem;
+    width: 100%;
+    margin-inline: auto;
+    background-color: #000;
+  }
+
+  .plans img {
+    width: 25.75rem;
+    height: 6.5rem;
+  }
+
+  h1 {
+    margin-top: 1.5rem;
+  }
+
+  h3 {
+    margin-top: 1rem;
+  }
+
+  .buttons {
+    margin-top: 2.5rem;
+  }
+
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cante Agora</title>
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+
+  <header class="container px-base">
+    <div class="contentHeader">
+      <div class="logo">
+        <img src="./assets/image/Logo.svg" alt="logo zingen">
+        <img src="./assets/image/logoHover.svg" alt="logo zingen">
+      </div>
+
+      <div class="headerNav flex gap-32">
+        <nav class="desktop-only">
+          <ul [role="list" ] class="flex gap-16">
+            <a href="#app">Conheça o app</a>
+            <a href="#feactures">Funcionalidades</a>
+            <a href="#plan">Planos e preços</a>
+          </ul>
+        </nav>
+
+        <button class="button button-md">Baixar agora</button>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+
+    <section class="bg-hero">
+      <div class="container plans" id="app">
+        <img src="./assets/image/musicBar.svg" alt="barra de som">
+
+        <h1 class="text-align">Quem canta seus males espanta</h1>
+        <h3 class="text-align text-color-secondary">
+          Cantar nunca foi tão fácil
+        </h3>
+
+        <div class="buttons flex gap-16">
+          <button aria-label="Ver planos" href="#" class="button button-lg"></button>
+          <button class="button button-lg">Baixar agora</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="smartphones container px-base">
+      <img class="smartphone" src="./assets/image/smartphones.svg" alt="smartphones">
+
+      <div class="grid py-lg">
+        <span>conheça o app</span>
+        <h2>O aplicativo perfeito para aprender a cantar</h2>
+        <p>
+          Nosso algoritmo de Inteligência Artificial permite remover a voz original e manter as melodias das músicas.
+          Dessa forma, temos o maior repertório musical para Karaokê! Além disso, ao cantar, sua voz e afinação é
+          comparada pelo algoritmo permitindo uma avaliação precisa da sua performance te ajudando a melhorar seu canto.
+        </p>
+      </div>
+    </section>
+
+    <section class="informations container">
+      <div class="items grid px-base py-lg" id="feactures">
+
+        <div class="item px-base py-base">
+          <img src="./assets/icons/MagicWand.svg" alt="icone de varinha mágica">
+          <h3 class="extraBold">A maior biblioteca de músicas de Karaokê!</h3>
+          <p>Nossa IA remove a voz de qualquer música e a deixa pronta pra cantar, num passe de mágica!</p>
+        </div>
+
+        <div class="item px-base py-base pinkPhone relative">
+          <img src="./assets/icons/GameController.svg" alt="icone de varinha mágica">
+
+          <img class="desktop-only" src="./assets/image/pinkPhone.svg" alt="celular com fundo rosa">
+          <h3 class="extraBold">Experiência gamificada</h3>
+          <p>Sua performance é pontuada de acordo com nosso algoritmo ultra preciso. Desafie-se, ganhe reconhecimento e
+            comemore sua evolução!</p>
+        </div>
+
+        <div class="item px-base py-base">
+          <img src="./assets/icons/MicrophoneStage.svg" alt="icone de varinha mágica">
+          <h3 class="extraBold">Grave suas performances</h3>
+          <p>Seja para compartilhar com os amigos ou para acompanhar sua evolução, nosso recurso de gravação de áudio e
+            vídeo permite que você aproveite a experiência ao máximo! </p>
+        </div>
+        <div class="grid rowTwo">
+          <div class="item px-base py-base relative">
+            <img class="desktop-only yellowPhone" src="./assets/image/yellowPhone.svg" alt="celular com fundo amarelo">
+
+            <div>
+              <img src="./assets/icons/UsersThree.svg" alt="icone de varinha mágica">
+              <h3 class="extraBold">Compartilhe com a comunidade</h3>
+              <p>Compartilhe suas gravações com a comunidade, interaja e explore a performance vocal de outras pessoas
+                no
+                seu feed!</p>
+            </div>
+          </div>
+
+          <div class="item px-base py-base relative">
+            <img src="./assets/icons/music.svg" alt="icone de varinha mágica">
+            <img class="desktop-only" src="./assets/image/bluePhone.svg" alt="celular com fundo azul">
+            <h3 class="extraBold">Letras em tempo-real</h3>
+            <p>Nunca perca o ritmo com as letras das músicas sincronizadas e exibidas em tempo real. Você também pode
+              ativar a voz original da música para ajudar.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="subscription grid px-base" id="plan">
+      <span>planos e preços</span>
+      <h2>Assine e tenha acesso ilimitado a todas as funcionalidades</h2>
+
+      <div class="cards">
+        <div class="card px-base py-base">
+          <h3>Básico</h3>
+          <p>Baixe o app e comece a cantar agora mesmo!</p>
+          <h2>Grátis</h2>
+          <button aria-label="Baixar agora" href="#" class="button button-lg"></button>
+          <div class="lineCard"></div>
+          <div class="flex gap-8">
+            <img src="./assets/icons/Check.svg" alt="">
+            <p>Com anúncios</p>
+          </div>
+          <div class="flex gap-8 mg-block-16">
+            <img src="./assets/icons/Check.svg" alt="">
+            <p>Até 5 músicas por dia</p>
+          </div>
+          <div class="flex gap-8">
+            <img src="./assets/icons/Check.svg" alt="">
+            <p>Cante apenas as músicas disponíveis no plano gratuito</p>
+          </div>
+        </div>
+
+        <div class="premium">
+          <div class="card px-base py-base mg-block-32 relative">
+            <div class="mouthFree">
+              1 mês grátis
+            </div>
+            <h3>Premium</h3>
+            <p>Ideal para quem já cansou de passar vergonha no Karaokê</p>
+            <h2 class="flex">R$ 24,90 <strong>/mês</strong></h2>
+            <button class="button button-lg">Experimente de graça</button>
+            <div class="lineCard"></div>
+            <div class="flex gap-8">
+              <img src="./assets/icons/Check.svg" alt="">
+              <p>Sem interrupção de anúncios</p>
+            </div>
+            <div class="flex gap-8 mg-block-16">
+              <img src="./assets/icons/Check.svg" alt="">
+              <p>Cante quantas músicas quiser</p>
+            </div>
+            <div class="flex gap-8">
+              <img src="./assets/icons/Check.svg" alt="">
+              <p>Cante todas as músicas da biblioteca</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card px-base py-base">
+          <h3>Família</h3>
+          <p>Para aquelas famílias que adoram se reunir pra cantar</p>
+          <h2 class="flex">R$ 21,90 <strong>/mês por pessoa</strong></h2>
+          <button aria-label="Assinar agora" href="#" class="button button-lg"></button>
+          <div class="lineCard"></div>
+          <div class="flex gap-8">
+            <img src="./assets/icons/Check.svg" alt="">
+            <p>Sem interrupção de anúncios</p>
+          </div>
+          <div class="flex gap-8 mg-block-16">
+            <img src="./assets/icons/Check.svg" alt="">
+            <p>Cante quantas músicas quiser</p>
+          </div>
+          <div class="flex gap-8">
+            <img src="./assets/icons/Check.svg" alt="">
+            <p>Cante todas as músicas da biblioteca</p>
+          </div>
+          <p class="legend">Mínimo de 4 pessoas no plano família.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="download grid container px-base">
+      <div class="downloadContent px-base py-lg">
+        <span>download</span>
+        <h2>Bora cantar?</h2>
+        <p>
+          Desperte seu potencial de estrela, liberte sua voz e faça parte da comunidade musical mais envolvente. Baixe o
+          Zingen agora e transforme suas performances em experiências inesquecíveis!
+        </p>
+
+        <img src="./assets/image/AppStore.svg" alt="apple store">
+        <img src="./assets/image/playStore.svg" alt="play store">
+
+        <img class="mobile-only boy"
+          src="./assets/image/rapaz-ouvindo-musica-com-fones-de-ouvido-e-cantando-no-aplicativo-de-karaoke-removebg 2.svg"
+          alt="">
+
+        <img class="desktop-only boyDesktop" src="./assets/image/rapazDesktop.svg" alt="">
+      </div>
+    </section>
+
+    <footer class="container py-base">
+
+      <div class="footer px-lg">
+        <div class="footerList">
+          <img src="./assets/image/Logo.svg" alt="logo zingen">
+          <div class="lists">
+            <div class="list">
+              <span>produto</span>
+              <ul [role="list" ]>
+                <li><a href="#feactures">Funcionalidades</a></li>
+                <li><a href="#plan">Planos e preços</a></li>
+                <li><a href="#app">Download</a></li>
+              </ul>
+            </div>
+
+            <div class="list">
+              <span>empresa</span>
+              <ul [role="list" ]>
+                <li><a href="">Sobre nós</a></li>
+                <li><a href="">Trabalhe conosco</a></li>
+                <li><a href="">Blog</a></li>
+              </ul>
+            </div>
+
+            <div class="list">
+              <span>produto</span>
+              <ul [role="list" ]>
+                <li><a href="">Termos de uso</a></li>
+                <li><a href="">Política de privacidade</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+        <div class="legendfooter">
+          <div class="social-media flex gap-24">
+            <div class="tiktok"></div>
+            <div class="instagram"></div>
+            <div class="twitter"></div>
+            <div class="discord"></div>
+          </div>
+
+          <p>©2024 Zingen Technologies, Inc.</p>
+        </div>
+    </footer>
+
+  </main>
+
+</body>
+
+</html>

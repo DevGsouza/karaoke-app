@@ -1,0 +1,91 @@
+.items {
+  background-color: #09090B;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.item {
+  background-color: var(--stroke-color);
+  border-radius: 2rem;
+  display: grid;
+  justify-content: center;
+  width: fit-content;
+}
+
+.rowTwo {
+  gap: 1.5rem;
+}
+
+.item h3 {
+  margin-bottom: .5rem;
+}
+
+.item p,
+.item h3 {
+  width: 17.4rem;
+}
+
+@media (width >=80rem) {
+
+  .items {
+    grid-template-columns: 17.5rem 37rem 17.5rem;
+    grid-template-rows: 25rem;
+    gap: 2rem;
+    max-width: 100%
+  }
+
+  .item {
+    padding: 2.5rem 2rem;
+    display: inline;
+    width: 100%;
+  }
+
+  .items .item:nth-child(1) p,
+  .items .item:nth-child(1) h3,
+  .items .item:nth-child(3) p,
+  .items .item:nth-child(3) h3 {
+    width: 13.5rem;
+  }
+
+  .items .item:nth-child(2) p,
+  .items .item:nth-child(2) h3,
+  .rowTwo .item:nth-child(1) p,
+  .rowTwo .item:nth-child(1) h3 {
+    width: 17rem;
+  }
+
+  .rowTwo .item:nth-child(2) p,
+  .rowTwo .item:nth-child(2) h3 {
+    width: 16rem;
+  }
+
+  .rowTwo {
+    grid-template-columns: 37rem 37rem;
+    grid-template-rows: 25rem;
+    gap: 2rem;
+  }
+
+  /*bg-phones*/
+  .pinkPhone img:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .rowTwo .item:nth-child(1) .yellowPhone {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .rowTwo .item div {
+    position: absolute;
+    right: 1.5rem;
+  }
+
+  .rowTwo .item:nth-child(2) img:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

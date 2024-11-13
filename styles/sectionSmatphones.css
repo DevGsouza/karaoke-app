@@ -1,0 +1,53 @@
+.smartphones {
+  background: url(../assets/image/bg-plans-mobile.svg) no-repeat top;
+  background-size: cover;
+  padding-top: 5.2rem;
+  display: grid;
+  justify-content: center;
+
+  .grid {
+    gap: .5rem;
+  }
+}
+
+.smartphone img {
+  margin-inline: center;
+}
+
+.smartphones div {
+  width: 20.5rem;
+  margin-inline: 1.5rem;
+}
+
+span {
+  text-transform: uppercase;
+  color: var(--brand-color-primary);
+}
+
+span:hover {
+  opacity: .8;
+}
+
+@media (width >=80rem) {
+  .smartphones {
+    background: none;
+    padding-top: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+    .grid {
+      max-width: 40rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .smartphone {
+      width: 34rem;
+    }
+  }
+
+  .smartphones div {
+    width: 40rem;
+  }
+}

@@ -1,0 +1,60 @@
+.download {
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  background-color: #09090B;
+}
+
+.downloadContent {
+  background-color: var(--stroke-color);
+  border-radius: 2rem;
+  position: relative;
+  height: 41rem;
+  max-width: 20.5rem;
+  padding-top: 3rem;
+
+  & h2 {
+    margin-bottom: .5rem;
+  }
+
+  & p {
+    margin-bottom: 2rem;
+  }
+
+  & img+img {
+    margin-top: .5rem;
+  }
+}
+
+.boy {
+
+  position: absolute;
+  bottom: -2.5rem;
+  right: -1.5rem;
+}
+
+@media (width >=80rem) {
+  .download {
+    width: 100%;
+  }
+
+  .downloadContent {
+    min-width: 78rem;
+    height: 33rem;
+    position: relative;
+    padding-top: 8.75rem;
+    padding-left: 5rem;
+
+    & p {
+      width: 40rem;
+    }
+  }
+
+  .boyDesktop {
+    width: 29rem;
+    height: 41rem;
+    position: absolute;
+    right: -2rem;
+    top: -3.8rem;
+  }
+}
