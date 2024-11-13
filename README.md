@@ -1,4 +1,4 @@
-<strong><h1 align="center">karaokê APP</h1></strong>
+<strong><h1 align="center">Zingen APP</h1></strong>
 
 <p align="center">
   <img alt="" src="karaoke.jpeg" width="100%">
